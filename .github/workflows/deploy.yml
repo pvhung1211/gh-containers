@@ -12,7 +12,7 @@ jobs:
     environment: testing
     runs-on: ubuntu-latest
     env:
-      MONGODB_CLUSTER_ADDRESS: localhost:27017
+      MONGODB_CLUSTER_ADDRESS: localhost:13417
       MONGODB_CONNECTION_PROTOCOL: mongodb
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: example
@@ -21,7 +21,7 @@ jobs:
       mongo:
         image: mongo
         ports:
-          - 27017:27017
+          - 13417:27017
         env:
           MONGO_INITDB_ROOT_USERNAME: root
           MONGO_INITDB_ROOT_PASSWORD: example  
